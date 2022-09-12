@@ -253,7 +253,8 @@ and Decision Tree Classifier = 0.58##
 
 ## EVALUATE THE MODEL ON TEST SET
 
-should tf.random.set_seed(0)
+should iteration 1 <br />
+tf.random.set_seed(0)
 
 ```
 results = model.evaluate(x_test, y_test, batch_size=128)
