@@ -230,7 +230,7 @@ print( f"{model.metrics_names} = {results}" )
 ```
 ![messageImage_1663001679765](https://user-images.githubusercontent.com/107698198/189712283-b0912d74-7d99-4d29-b6b3-f0d38ac74e16.jpg)
 
-## RESULT
+## RESULTS
 
 ```
 import statistics
@@ -244,8 +244,9 @@ print("Mean is :", mean)
 print("SD is :", SD)
 ```
 
-<img width="264" alt="ภาพถ่ายหน้าจอ 2565-09-13 เวลา 00 22 49" src="https://user-images.githubusercontent.com/107698198/189717327-9b9aa580-fde6-4640-892f-43c9d627c8ca.png">
-
+> Mean is : 0.71736 <br />
+SD is : 0.007873245836375223 <br />
+Results = 0.71736±0.0079
 
 
 
