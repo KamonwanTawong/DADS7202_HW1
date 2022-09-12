@@ -174,7 +174,18 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  history = model.fit ( x_train, y_train, batch_size=128, epochs=20, verbose=1, validation_split=0.2, callbacks=[model_checkpoint_callback] )
  ```
  Iteration
- > **Iteration 1** <br />
+ > + **Iteration 1** <br />
+ np.random.seed(1234) <br />
+ tf.random.set_seed(5678) <br />
+ batch_size = 128 <br />
+ epochs = 20 <br />
+ accuracy = 0.7299 <br />
+ loss =  0.5378 <br />
+ <img width="1009" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 32 19" src="https://user-images.githubusercontent.com/107698198/189667635-dda34815-f5ec-4ad1-b110-0c6a0c92afc5.png">
+ 
+ 
+ 
+  > + **Iteration 2** <br />
  np.random.seed(1234) <br />
  tf.random.set_seed(5678) <br />
  batch_size = 128 <br />
@@ -182,7 +193,29 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  accuracy = <br />
  loss = <br />
  
+  > + **Iteration 3** <br />
+ np.random.seed(1234) <br />
+ tf.random.set_seed(5678) <br />
+ batch_size = 128 <br />
+ epochs = 20 <br />
+ accuracy = <br />
+ loss = <br />
  
+  > + **Iteration 4** <br />
+ np.random.seed(1234) <br />
+ tf.random.set_seed(5678) <br />
+ batch_size = 128 <br />
+ epochs = 20 <br />
+ accuracy = <br />
+ loss = <br />
+ 
+  > + **Iteration 5** <br />
+ np.random.seed(1234) <br />
+ tf.random.set_seed(5678) <br />
+ batch_size = 128 <br />
+ epochs = 20 <br />
+ accuracy = <br />
+ loss = <br />
  
  ```
  # Summarize history for accuracy
@@ -208,7 +241,7 @@ plt.grid()
 plt.show()
 ```
 
-<img width="1009" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 32 19" src="https://user-images.githubusercontent.com/107698198/189667635-dda34815-f5ec-4ad1-b110-0c6a0c92afc5.png">
+
 
 
 
