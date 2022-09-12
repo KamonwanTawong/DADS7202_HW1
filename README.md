@@ -108,8 +108,8 @@ for m in models:
     print(classification_report(y_test,y_pred, zero_division=1))
     print('-'*30, '\n')
 ```
-<img width="515" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 11 58" src="https://user-images.githubusercontent.com/107698198/189663551-9df4e55f-762e-4959-9f43-b768d98223c0.png">
-<img width="519" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 12 57" src="https://user-images.githubusercontent.com/107698198/189663571-3df3ed88-50a7-4393-ac49-42012977e567.png">
+<img width="506" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 21 46 02" src="https://user-images.githubusercontent.com/107698198/189684562-27c249fe-302e-4902-876e-01096f89956c.png">
+<img width="533" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 21 50 02" src="https://user-images.githubusercontent.com/107698198/189685512-8a9d51f8-7b59-462b-856a-004300ddd99b.png">
 <img width="496" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 13 12" src="https://user-images.githubusercontent.com/107698198/189663573-d345f3a5-5907-4fe7-a851-fde06bcd9d37.png">
 
 ## Network architecture
