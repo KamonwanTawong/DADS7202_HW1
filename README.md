@@ -1,8 +1,8 @@
 # DADS7202
 
-## Introduction
+## INTRODUCTION
 
-## Data
+## DATA
 https://www.kaggle.com/datasets/adityakadiwal/water-potability
 
 ```
@@ -41,7 +41,7 @@ df.info()
 <img width="418" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 19 40 56" src="https://user-images.githubusercontent.com/107698198/189656535-c4e399f7-d871-4335-9293-c165d460bbee.png">
 
 
-EDA
+EXPLORATORY DATA ANALYSIS
 
 ```
 from sklearn.impute import SimpleImputer
@@ -77,7 +77,7 @@ X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 ```
 
-## Machine Learning
+## MACHINE LEARNING
 
 ```
 from sklearn.ensemble import RandomForestClassifier
@@ -112,7 +112,7 @@ for m in models:
 <img width="533" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 21 50 02" src="https://user-images.githubusercontent.com/107698198/189685512-8a9d51f8-7b59-462b-856a-004300ddd99b.png">
 <img width="496" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 13 12" src="https://user-images.githubusercontent.com/107698198/189663573-d345f3a5-5907-4fe7-a851-fde06bcd9d37.png">
 
-## Network architecture
+## NETWORK ARCHITECTURE 
 
 ```
 input_dim = 9     # the number of features per one input
