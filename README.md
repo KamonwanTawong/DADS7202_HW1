@@ -217,29 +217,7 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  accuracy = <br />
  loss = <br />
  
- ```
- # Summarize history for accuracy
-plt.figure(figsize=(15,5))
-plt.plot(history.history['acc'])
-plt.plot(history.history['val_acc'])
-plt.title('Train accuracy')
-plt.ylabel('accuracy')
-plt.xlabel('epoch')
-plt.legend(['train', 'val'], loc='upper left')
-plt.grid()
-plt.show()
 
-# Summarize history for loss
-plt.figure(figsize=(15,5))
-plt.plot(history.history['loss'])
-plt.plot(history.history['val_loss'])
-plt.title('Train loss')
-plt.ylabel('loss')
-plt.xlabel('epoch')
-plt.legend(['train', 'val'], loc='upper right')
-plt.grid()
-plt.show()
-```
 
 
 
