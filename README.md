@@ -139,7 +139,15 @@ model.summary()
 
 <img width="581" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 25 53" src="https://user-images.githubusercontent.com/107698198/189666211-625476db-2680-44ca-a62f-b13a5c4bb424.png">
 
-## Compile the model
+
+## COMPILE THE MODEL 
+
+```
+# Set fixed seeding values for reproducability during experiments
+# Skip this cell if random initialization (with varied results) is needed
+np.random.seed(1234)
+tf.random.set_seed(5678)
+```
 
 ```
 # Compile with default values for both optimizer and loss
@@ -165,6 +173,16 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  ```
  history = model.fit ( x_train, y_train, batch_size=128, epochs=20, verbose=1, validation_split=0.2, callbacks=[model_checkpoint_callback] )
  ```
+ Iteration
+ > **Iteration 1** <br />
+ np.random.seed(1234) <br />
+ tf.random.set_seed(5678) <br />
+ batch_size = 128 <br />
+ epochs = 20 <br />
+ accuracy = <br />
+ loss = <br />
+ 
+ 
  
  ```
  # Summarize history for accuracy
