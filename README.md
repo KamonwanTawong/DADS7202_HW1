@@ -41,15 +41,23 @@ df.info()
 <img width="418" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 19 40 56" src="https://user-images.githubusercontent.com/107698198/189656535-c4e399f7-d871-4335-9293-c165d460bbee.png">
 
 
-The statistics of the dataset
+EDA
 
+```
+from sklearn.impute import SimpleImputer
+imp_mean = SimpleImputer(missing_values = np.nan, strategy = 'mean')
+df_clean = imp_mean.fit_transform(df)
+```
+
+```
+df_clean = pd.DataFrame(df_clean,columns = df.columns)
+```
 
 ```
 df_clean.describe().style.background_gradient(cmap = "Reds")
 ```
 <img width="935" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 19 48 02" src="https://user-images.githubusercontent.com/107698198/189657964-97dd91f7-382c-467a-bdaf-269c39836db7.png">
 
-EDA
 
 ```
 from sklearn.model_selection import train_test_split
