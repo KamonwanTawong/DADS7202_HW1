@@ -104,6 +104,86 @@ for m in models:
 <img width="519" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 12 57" src="https://user-images.githubusercontent.com/107698198/189663571-3df3ed88-50a7-4393-ac49-42012977e567.png">
 <img width="496" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 13 12" src="https://user-images.githubusercontent.com/107698198/189663573-d345f3a5-5907-4fe7-a851-fde06bcd9d37.png">
 
+## Network architecture
+
+```
+input_dim = 9     # the number of features per one input
+output_dim = 2     # the number of output classes
+
+model = tf.keras.models.Sequential()
+
+# Input layer
+model.add( tf.keras.Input(shape=(input_dim,)) )
+
+# Hidden layer
+model.add( tf.keras.layers.Dense(32, activation='relu', name='hidden1') )   # use default weight initialization, don't use any regularization
+model.add( tf.keras.layers.BatchNormalization(axis=-1, name='bn1') )  
+model.add( tf.keras.layers.Dense(64, activation='relu', name='hidden2') )   # use default weight initialization, don't use any regularization
+model.add( tf.keras.layers.BatchNormalization(axis=-1, name='bn2') )
+model.add( tf.keras.layers.Dense(32, activation='relu', name='hidden3') )   # use default weight initialization, don't use any regularization
+model.add( tf.keras.layers.Dropout(0.3) )                        # drop rate = 30%
+
+# Output layer
+model.add( tf.keras.layers.Dense(output_dim, activation='softmax', name='output') )
+
+model.summary()
+```
+
+<img width="581" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 25 53" src="https://user-images.githubusercontent.com/107698198/189666211-625476db-2680-44ca-a62f-b13a5c4bb424.png">
+
+## Compile the model
+
+```
+# Compile with default values for both optimizer and loss
+model.compile( optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['acc'] )
+```
+
+```
+# Compile + hyperparameter tuning
+model.compile( optimizer=tf.keras.optimizers.Adam(learning_rate=0.001) , 
+                       loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False) ,
+                       metrics=['acc'] )
+ ```
+ 
+ ```
+ checkpoint_filepath = "bestmodel_epoch{epoch:02d}_valloss{val_loss:.2f}.hdf5"
+model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpoint_filepath,
+                                                                                              save_weights_only=True,
+                                                                                              monitor='val_acc',
+                                                                                              mode='max',
+                                                                                              save_best_only=True)
+ ```
+ 
+ ```
+ history = model.fit ( x_train, y_train, batch_size=128, epochs=20, verbose=1, validation_split=0.2, callbacks=[model_checkpoint_callback] )
+ ```
+ 
+ ```
+ # Summarize history for accuracy
+plt.figure(figsize=(15,5))
+plt.plot(history.history['acc'])
+plt.plot(history.history['val_acc'])
+plt.title('Train accuracy')
+plt.ylabel('accuracy')
+plt.xlabel('epoch')
+plt.legend(['train', 'val'], loc='upper left')
+plt.grid()
+plt.show()
+
+# Summarize history for loss
+plt.figure(figsize=(15,5))
+plt.plot(history.history['loss'])
+plt.plot(history.history['val_loss'])
+plt.title('Train loss')
+plt.ylabel('loss')
+plt.xlabel('epoch')
+plt.legend(['train', 'val'], loc='upper right')
+plt.grid()
+plt.show()
+```
+
+<img width="1009" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 32 19" src="https://user-images.githubusercontent.com/107698198/189667635-dda34815-f5ec-4ad1-b110-0c6a0c92afc5.png">
+
 
 
 
