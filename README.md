@@ -242,7 +242,6 @@ SD = statistics.stdev(data1)
  
 print("Mean is :", mean)
 print("SD is :", SD)
-
 ```
 
 > Mean is : 0.71736 <br />
