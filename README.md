@@ -218,6 +218,9 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  accuracy = 0.7179 <br />
  loss = 0.5541 <br />
  ![messageImage_1663000757251](https://user-images.githubusercontent.com/107698198/189709133-a8c9a922-aa28-4d28-b0dd-fd1462ce1cb8.jpg)
+ 
+ > As you can in the plot above, at iteration 4 has accuracy = 0.7299 which is the most  and iteration 4 has loss = 0.5378 which is the least in the plot above, but at iteration 4 is a gap between the training and validation loss/accuracy more than iteration 1 , iteration 2 and iteration 3 but iteration 1 has the least gap.  <br /> <br />
+For this reason, iteration 1 was used evaluate the model on test set.
 
 ## EVALUATE THE MODEL ON TEST SET
 
