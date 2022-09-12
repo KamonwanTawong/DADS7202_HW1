@@ -248,7 +248,7 @@ MLP = 0.68 <br />
 Random Forest Classifier = 0.67 <br />
 KNeighbors Classifier = 0.64 <br />
 Logistic Regresstion = 0.63 <br />
-and Decision Tree Classifier = 0.58## 
+and Decision Tree Classifier = 0.58
 
 
 ## EVALUATE THE MODEL ON TEST SET
