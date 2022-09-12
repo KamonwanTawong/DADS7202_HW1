@@ -222,15 +222,6 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  > As you can in the plot above, at iteration 4 has accuracy = 0.7299 which is the most  and iteration 4 has loss = 0.5378 which is the least in the plot above, but at iteration 4 is a gap between the training and validation loss/accuracy more than iteration 1 , iteration 2 and iteration 3 but iteration 1 has the least gap.  <br /> <br />
 For this reason, iteration 1 was used evaluate the model on test set.
 
-## EVALUATE THE MODEL ON TEST SET
-
-should tf.random.set_seed(0)
-
-```
-results = model.evaluate(x_test, y_test, batch_size=128)
-print( f"{model.metrics_names} = {results}" )
-```
-![messageImage_1663001679765](https://user-images.githubusercontent.com/107698198/189712283-b0912d74-7d99-4d29-b6b3-f0d38ac74e16.jpg)
 
 ## RESULTS
 
@@ -257,7 +248,25 @@ MLP = 0.68 <br />
 Random Forest Classifier = 0.67 <br />
 KNeighbors Classifier = 0.64 <br />
 Logistic Regresstion = 0.63 <br />
-and Decision Tree Classifier = 0.58
+and Decision Tree Classifier = 0.58## EVALUATE THE MODEL ON TEST SET
+
+should tf.random.set_seed(0)
+
+```
+results = model.evaluate(x_test, y_test, batch_size=128)
+print( f"{model.metrics_names} = {results}" )
+```
+![messageImage_1663001679765](https://user-images.githubusercontent.com/107698198/189712283-b0912d74-7d99-4d29-b6b3-f0d38ac74e16.jpg)
+
+## EVALUATE THE MODEL ON TEST SET
+
+should tf.random.set_seed(0)
+
+```
+results = model.evaluate(x_test, y_test, batch_size=128)
+print( f"{model.metrics_names} = {results}" )
+```
+![messageImage_1663001679765](https://user-images.githubusercontent.com/107698198/189712283-b0912d74-7d99-4d29-b6b3-f0d38ac74e16.jpg)
 
 
 
