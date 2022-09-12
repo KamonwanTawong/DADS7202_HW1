@@ -174,18 +174,7 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  history = model.fit ( x_train, y_train, batch_size=128, epochs=20, verbose=1, validation_split=0.2, callbacks=[model_checkpoint_callback] )
  ```
  Iteration
- > + **Iteration 1** <br />
- tf.random.set_seed(5678) <br />
- batch_size = 128 <br />
- epochs = 20 <br />
- training time per epoch = 0.05s <br />
- accuracy = 0.7299 <br />
- loss =  0.5378 <br />
- <img width="1009" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 32 19" src="https://user-images.githubusercontent.com/107698198/189667635-dda34815-f5ec-4ad1-b110-0c6a0c92afc5.png">
- 
- 
- 
-  > + **Iteration 2** <br />
+   > + **Iteration 1** <br />
  tf.random.set_seed(0) <br />
  batch_size = 128 <br />
  epochs = 20 <br />
@@ -193,9 +182,8 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  accuracy = 0.7157 <br />
  loss = 0.5539 <br />
  ![messageImage_1662998773588](https://user-images.githubusercontent.com/107698198/189702724-2f3b309b-818b-419b-93c9-97bf7c71b74b.jpg)
-
  
-  > + **Iteration 3** <br />
+   > + **Iteration 2** <br />
  tf.random.set_seed(1234) <br />
  batch_size = 128 <br />
  epochs = 20 <br />
@@ -203,16 +191,24 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  accuracy = 0.7083 <br />
  loss = 0.5732 <br />
  ![messageImage_1662999642943](https://user-images.githubusercontent.com/107698198/189705600-5884cd3e-e957-4ce6-b3ce-4e8a1d0494c6.jpg)
-
  
-  > + **Iteration 4** <br />
+ > + **Iteration 3** <br />
  tf.random.set_seed(5678) <br />
  batch_size = 128 <br />
  epochs = 20 <br />
- training time per epoch = 0.15s <br />
+ training time per epoch = 0.05s <br />
  accuracy = 0.7299 <br />
- loss = 0.5378 <br />
- ![messageImage_1662999945729](https://user-images.githubusercontent.com/107698198/189706560-a0074bd3-5dd5-402f-8443-1f142bc0bbb4.jpg)
+ loss =  0.5378 <br />
+ <img width="1009" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 32 19" src="https://user-images.githubusercontent.com/107698198/189667635-dda34815-f5ec-4ad1-b110-0c6a0c92afc5.png">
+
+ 
+  > + **Iteration 4** <br />
+ tf.random.set_seed(2345) <br />
+ batch_size = 128 <br />
+ epochs = 20 <br />
+ training time per epoch = 0.1s <br />
+ accuracy = 0.7179 <br />
+ loss = 0.5541 <br />
  
   > + **Iteration 5** <br />
  tf.random.set_seed(0) <br />
