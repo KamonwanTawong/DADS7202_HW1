@@ -184,6 +184,15 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  ![messageImage_1662998773588](https://user-images.githubusercontent.com/107698198/189702724-2f3b309b-818b-419b-93c9-97bf7c71b74b.jpg)
  
    > + **Iteration 2** <br />
+ tf.random.set_seed(123) <br />
+ batch_size = 128 <br />
+ epochs = 20 <br />
+ training time per epoch = 0.1s <br />
+ accuracy = 0.7150 <br />
+ loss = 0.5528 <br />
+ ![messageImage_1663000936166](https://user-images.githubusercontent.com/107698198/189710000-f873ea5b-f925-4762-8818-a9a640308523.jpg)
+ 
+   > + **Iteration 3** <br />
  tf.random.set_seed(1234) <br />
  batch_size = 128 <br />
  epochs = 20 <br />
@@ -192,7 +201,7 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  loss = 0.5732 <br />
  ![messageImage_1662999642943](https://user-images.githubusercontent.com/107698198/189705600-5884cd3e-e957-4ce6-b3ce-4e8a1d0494c6.jpg)
  
- > + **Iteration 3** <br />
+ > + **Iteration 4** <br />
  tf.random.set_seed(5678) <br />
  batch_size = 128 <br />
  epochs = 20 <br />
@@ -202,7 +211,7 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  <img width="1009" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 32 19" src="https://user-images.githubusercontent.com/107698198/189667635-dda34815-f5ec-4ad1-b110-0c6a0c92afc5.png">
 
  
-  > + **Iteration 4** <br />
+  > + **Iteration 5** <br />
  tf.random.set_seed(2345) <br />
  batch_size = 128 <br />
  epochs = 20 <br />
@@ -211,16 +220,7 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  loss = 0.5541 <br />
  ![messageImage_1663000757251](https://user-images.githubusercontent.com/107698198/189709133-a8c9a922-aa28-4d28-b0dd-fd1462ce1cb8.jpg)
 
- 
-  > + **Iteration 5** <br />
- tf.random.set_seed(0) <br />
- batch_size = 128 <br />
- epochs = 20 <br />
- training time per epoch = 0.1s <br />
- accuracy = 0.7157 <br />
- loss = 0.5539 <br />
- ![messageImage_1663000133535](https://user-images.githubusercontent.com/107698198/189707147-34cfc26a-76b2-4d8e-8b0c-778f61454e30.jpg)
- 
+
 
 
 
