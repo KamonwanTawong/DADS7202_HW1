@@ -242,7 +242,7 @@ SD is : 0.007873245836375223 <br />
 
 > Results = 0.71736±0.0079
 
-> From the accuracy results, it was found that MLP gave the highest accuracy = 0.71 <br />
+> From the accuracy results, it was found that MLP gave the highest accuracy = 0.71736±0.0079 <br />
 Next, SVM = 0.69 <br />
 MLP = 0.68 <br />
 Random Forest Classifier = 0.67 <br />
