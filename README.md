@@ -209,13 +209,13 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
 
  
   > + **Iteration 4** <br />
- np.random.seed(1234) <br />
+ np.random.seed(0) <br />
  tf.random.set_seed(5678) <br />
  batch_size = 128 <br />
  epochs = 20 <br />
- training time per epoch = 0.05s <br />
- accuracy = <br />
- loss = <br />
+ training time per epoch = 0.15s <br />
+ accuracy = 0.7299 <br />
+ loss = 0.5378 <br />
  
   > + **Iteration 5** <br />
  np.random.seed(1234) <br />
