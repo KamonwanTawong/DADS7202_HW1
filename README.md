@@ -179,7 +179,7 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  tf.random.set_seed(5678) <br />
  batch_size = 128 <br />
  epochs = 20 <br />
- training time per epoch = 0.05s
+ training time per epoch = 0.05s <br />
  accuracy = 0.7299 <br />
  loss =  0.5378 <br />
  <img width="1009" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 32 19" src="https://user-images.githubusercontent.com/107698198/189667635-dda34815-f5ec-4ad1-b110-0c6a0c92afc5.png">
@@ -191,7 +191,7 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  tf.random.set_seed(5678) <br />
  batch_size = 128 <br />
  epochs = 20 <br />
- training time per epoch = 0.05s
+ training time per epoch = 0.05s <br />
  accuracy = <br />
  loss = <br />
  
@@ -200,7 +200,7 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  tf.random.set_seed(5678) <br />
  batch_size = 128 <br />
  epochs = 20 <br />
- training time per epoch = 0.05s
+ training time per epoch = 0.05s <br />
  accuracy = <br />
  loss = <br />
  
@@ -209,7 +209,7 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  tf.random.set_seed(5678) <br />
  batch_size = 128 <br />
  epochs = 20 <br />
- training time per epoch = 0.05s
+ training time per epoch = 0.05s <br />
  accuracy = <br />
  loss = <br />
  
@@ -218,7 +218,7 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  tf.random.set_seed(5678) <br />
  batch_size = 128 <br />
  epochs = 20 <br />
- training time per epoch = 0.05s
+ training time per epoch = 0.05s <br />
  accuracy = <br />
  loss = <br />
  
