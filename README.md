@@ -226,6 +226,7 @@ model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint( filepath=checkpo
  training time per epoch = 0.1s <br />
  accuracy = 0.7157 <br />
  loss = 0.5539 <br />
+ ![messageImage_1663000133535](https://user-images.githubusercontent.com/107698198/189707147-34cfc26a-76b2-4d8e-8b0c-778f61454e30.jpg)
  
 
 
