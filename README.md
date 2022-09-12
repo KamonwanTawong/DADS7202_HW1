@@ -145,7 +145,6 @@ model.summary()
 ```
 # Set fixed seeding values for reproducability during experiments
 # Skip this cell if random initialization (with varied results) is needed
-np.random.seed(1234)
 tf.random.set_seed(5678)
 ```
 
