@@ -1,6 +1,7 @@
 # DADS7202
 
 ## INTRODUCTION
+Access to safe drinking-water is essential to health, water quality reflect the health of ecosystems, the safety of human contact, and the health of drinking water. Water quality has a significant impact on water supply and often determines supply options. Water quality parameters are determined by the intended use.
 
 ## DATA
 https://www.kaggle.com/datasets/adityakadiwal/water-potability
@@ -242,7 +243,8 @@ SD is : 0.007873245836375223 <br />
 
 > Results = 0.71736±0.0079
 
-> From the accuracy results, it was found that MLP gave the highest accuracy = 0.71736±0.0079 <br />
+## CONCLUSION
+From the accuracy results, it was found that MLP gave the highest accuracy = 0.71736±0.0079 <br />
 Next, SVM = 0.69 <br />
 MLP = 0.68 <br />
 Random Forest Classifier = 0.67 <br />
@@ -253,8 +255,9 @@ and Decision Tree Classifier = 0.58
 
 ## EVALUATE THE MODEL ON TEST SET
 
-choose iteration 1 <br />
-tf.random.set_seed(0)
+The MLP models to achieve the goodness of fit. It defines closely the result predicted values match the true values of the dataset. <br />
+The results are presented in iteration 1 <br />
+> tf.random.set_seed(0) 
 
 ```
 results = model.evaluate(x_test, y_test, batch_size=128)
