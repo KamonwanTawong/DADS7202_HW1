@@ -253,7 +253,7 @@ and Decision Tree Classifier = 0.58
 
 ## EVALUATE THE MODEL ON TEST SET
 
-should iteration 1 <br />
+choose iteration 1 <br />
 tf.random.set_seed(0)
 
 ```
@@ -261,6 +261,17 @@ results = model.evaluate(x_test, y_test, batch_size=128)
 print( f"{model.metrics_names} = {results}" )
 ```
 ![messageImage_1663001679765](https://user-images.githubusercontent.com/107698198/189712283-b0912d74-7d99-4d29-b6b3-f0d38ac74e16.jpg)
+
+## REFERANCE
+[1]	Aditya kadiwal (2021). ‘Water quality from https://www.kaggle.com/datasets/adityakadiwal/water-potability?group=owned <br />
+[2]	(2016). ‘Model Fit: Underfitting vs. Overfitting’ from https://www.javatpoint.com/overfitting-and-underfitting-in-machine-learning <br />
+[3]	‘Overfitting and Underfitting in Machine Learning’ from https://www.javatpoint.com/overfitting-and-underfitting-in-machine-learning <br />
+[4]	(2022). ‘How to Use Sklearn train_test_split in Python’ from https://www.sharpsightlabs.com/blog/scikit-train_test_split/ <br />
+[5]	ณัฐโชติ พรหมฤทธิ์, สัจจาภรณ์ ไวจรรยา.(2564). Fundamental DEEP LEARNING in Practice (พิมพ์ครั้งที่1). นนทบุรี: ไอดีซี พรีเมียร์ จำกัด. <br />
+[6]	Scikit-learn developers(BSD license). (2007-2022). ‘Metrics and scoring:quantifying the quality of predictions’ from https://scikitlearn.org/stable/modules/model_evaluation.html <br />
+[7]	Sagar (2017). ‘Epoch vs Batch Size vs Iterations’ from https://towardsdatascience.com/epoch-vs-iterations-vs-batch-size-4dfb9c7ce9c9 
+
+
 
 
 
