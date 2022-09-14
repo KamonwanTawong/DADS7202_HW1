@@ -243,7 +243,7 @@ SD is : 0.007873245836375223 <br />
 
 > Results = 0.71736±0.0079
 
-## CONCLUSION
+## DISCUSSION
 From the accuracy results, it was found that MLP gave the highest accuracy = 0.71736±0.0079 <br />
 Next, SVM = 0.69 <br />
 MLP = 0.68 <br />
@@ -251,7 +251,6 @@ Random Forest Classifier = 0.67 <br />
 KNeighbors Classifier = 0.64 <br />
 Logistic Regresstion = 0.63 <br />
 and Decision Tree Classifier = 0.58
-
 
 ## EVALUATE THE MODEL ON TEST SET
 
@@ -264,6 +263,9 @@ results = model.evaluate(x_test, y_test, batch_size=128)
 print( f"{model.metrics_names} = {results}" )
 ```
 ![messageImage_1663001679765](https://user-images.githubusercontent.com/107698198/189712283-b0912d74-7d99-4d29-b6b3-f0d38ac74e16.jpg)
+
+## CONCLUSION
+From the calculation results, we can see that from the prediction result, the precision or the precision that the model will be able to classify. Drinkability: Indicates whether the water is safe for human consumption. The total average is about 0.6608
 
 ## REFERANCE
 [1]	Aditya kadiwal (2021). ‘Water quality from https://www.kaggle.com/datasets/adityakadiwal/water-potability?group=owned <br />
