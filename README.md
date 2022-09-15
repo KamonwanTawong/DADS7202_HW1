@@ -67,7 +67,8 @@ fig, ax = plt.subplots(figsize=(8,4))
 ax = sns.heatmap(corr_mat,annot=True,linewidths=0.5,fmt='.2f',cmap='YlGnBu')
 ```
 <img width="569" alt="ภาพถ่ายหน้าจอ 2565-09-15 เวลา 12 08 55" src="https://user-images.githubusercontent.com/107698198/190319427-af72116e-589c-4597-8fc7-c2b9ad5424b4.png">
-From the correlation table, the correlation coefficient range from -1 to +1, with -1 indicating a perfect negative correlation, +1 indicating a perfect positive correlation, and 0 indicating no correlation at all. 
+From the correlation table, the correlation coefficient range from -1 to +1, with -1 indicating a perfect negative correlation, +1 indicating a perfect positive correlation, and 0 indicating no correlation at all. <br /><br />
+
 
 ```
 from sklearn.model_selection import train_test_split
