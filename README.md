@@ -59,6 +59,13 @@ df_clean.describe().style.background_gradient(cmap = "Reds")
 ```
 <img width="935" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 19 48 02" src="https://user-images.githubusercontent.com/107698198/189657964-97dd91f7-382c-467a-bdaf-269c39836db7.png">
 
+```
+corr_mat = df_clean.corr()
+fig, ax = plt.subplots(figsize=(8,4))
+ax = sns.heatmap(corr_mat,annot=True,linewidths=0.5,fmt='.2f',cmap='YlGnBu')
+```
+<img width="569" alt="ภาพถ่ายหน้าจอ 2565-09-15 เวลา 12 08 55" src="https://user-images.githubusercontent.com/107698198/190319427-af72116e-589c-4597-8fc7-c2b9ad5424b4.png">
+
 
 ```
 from sklearn.model_selection import train_test_split
