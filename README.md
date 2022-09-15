@@ -259,8 +259,7 @@ SD is : 0.007873245836375223 <br />
 
 ## DISCUSSION
 
-![IMG_7230 2](https://user-images.githubusercontent.com/107698198/190328375-d0820212-f099-4c32-840e-0cdd54630fd9.jpg)
-
+![IMG_7230 3](https://user-images.githubusercontent.com/107698198/190329003-1822428c-c62c-4b6a-9b1e-80c5bf68bbdf.jpg)
 From the results, it was found that MLP gave the highest accuracy = 0.71736±0.0079 and training time = 0.1s which is the least. <br />
 
 ## EVALUATE THE MODEL ON TEST SET
