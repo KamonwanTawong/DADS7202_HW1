@@ -286,8 +286,13 @@ From evaluate the model on test set, we can see that from the prediction result,
 [6]	Scikit-learn developers(BSD license). (2007-2022). ‘Metrics and scoring:quantifying the quality of predictions’ from https://scikitlearn.org/stable/modules/model_evaluation.html <br />
 [7]	Sagar (2017). ‘Epoch vs Batch Size vs Iterations’ from https://towardsdatascience.com/epoch-vs-iterations-vs-batch-size-4dfb9c7ce9c9 
 
+## END CREDIT
+งานชิ้นนี้เป็นส่วนหนึ่งของวิชา DADS7202 Deep Learning หลักสูตรวิทยาศาสตร์มหาบัณฑิต คณะสถิติประยุกต์ สถาบันบัณฑิตพัฒนบริหารศาสตร์
 
-
+กลุ่มปลาทองออกลูกเป็นไข่
+- 6410412001
+- 6410412008
+- 6410412017
 
 
 
