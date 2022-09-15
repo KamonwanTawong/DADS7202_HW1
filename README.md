@@ -120,9 +120,8 @@ for m in models:
     print('Duration: {}'.format(end_time - start_time), '\n')
     print('-'*30, '\n')
 ```
-<img width="506" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 21 46 02" src="https://user-images.githubusercontent.com/107698198/189684562-27c249fe-302e-4902-876e-01096f89956c.png">
-<img width="533" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 21 50 02" src="https://user-images.githubusercontent.com/107698198/189685512-8a9d51f8-7b59-462b-856a-004300ddd99b.png">
-<img width="496" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 20 13 12" src="https://user-images.githubusercontent.com/107698198/189663573-d345f3a5-5907-4fe7-a851-fde06bcd9d37.png">
+<img width="496" alt="ภาพถ่ายหน้าจอ 2565-09-15 เวลา 12 16 20" src="https://user-images.githubusercontent.com/107698198/190320610-46748f93-578d-44c5-98bd-bc3b08054382.png">
+<img width="520" alt="ภาพถ่ายหน้าจอ 2565-09-15 เวลา 12 19 57" src="https://user-images.githubusercontent.com/107698198/190320802-5fd1bcd7-64c7-4052-8c66-91eaf1f84278.png">
 
 ## NETWORK ARCHITECTURE 
 
