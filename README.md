@@ -263,7 +263,7 @@ SD is : 0.007873245836375223 <br />
 
 ## DISCUSSION
 
-<img width="909" alt="ภาพถ่ายหน้าจอ 2565-09-15 เวลา 12 35 42" src="https://user-images.githubusercontent.com/107698198/190322708-99876ebc-1114-41fe-af74-e6fdffa76978.png">
+![IMG_7230 2](https://user-images.githubusercontent.com/107698198/190328375-d0820212-f099-4c32-840e-0cdd54630fd9.jpg)
 
 From the results, it was found that MLP gave the highest accuracy = 0.71736±0.0079 and training time = 0.1s which is the least. <br />
 
