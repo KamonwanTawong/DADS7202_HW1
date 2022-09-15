@@ -79,6 +79,10 @@ X_train, X_test, y_train, y_test = train_test_split(X,y,test_size = 0.33,random_
 X = df_clean.drop('Potability',axis = 1)
 y = df_clean.Potability
 ```
+Data
+
+> df_clean[df.columns].hist(layout=(1, len(df.columns)), figsize=(3*len(df.columns), 3.5), color='orange');
+<img width="1004" alt="ภาพถ่ายหน้าจอ 2565-09-15 เวลา 13 11 18" src="https://user-images.githubusercontent.com/107698198/190327657-ebd45231-fe6d-4bd9-8928-d5310ab2d416.png">
 
 ```
 from sklearn.preprocessing import StandardScaler
