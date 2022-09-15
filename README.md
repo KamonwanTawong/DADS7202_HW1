@@ -251,7 +251,8 @@ print("Mean is :", mean)
 print("SD is :", SD)
 ```
 
-> Mean is : 0.71736 <br />
+> data1 is accuracy from each iteration.  
+Mean is : 0.71736 <br />
 SD is : 0.007873245836375223 <br />
 
 > Results = 0.71736±0.0079
