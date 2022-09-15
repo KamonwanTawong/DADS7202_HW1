@@ -105,6 +105,8 @@ from sklearn.metrics import confusion_matrix,accuracy_score, classification_repo
 ```
 
 ```
+from datetime import datetime
+start_time = datetime.now()
 models = [RandomForestClassifier(), KNeighborsClassifier(), SVC(), LogisticRegression() , MLPClassifier() , DecisionTreeClassifier()]
 scores = dict()
 
@@ -114,6 +116,8 @@ for m in models:
 
     print(f'model: {str(m)}')
     print(classification_report(y_test,y_pred, zero_division=1))
+    end_time = datetime.now()
+    print('Duration: {}'.format(end_time - start_time), '\n')
     print('-'*30, '\n')
 ```
 <img width="506" alt="ภาพถ่ายหน้าจอ 2565-09-12 เวลา 21 46 02" src="https://user-images.githubusercontent.com/107698198/189684562-27c249fe-302e-4902-876e-01096f89956c.png">
